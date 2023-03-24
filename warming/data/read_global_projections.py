@@ -1,9 +1,11 @@
 import pandas as pb
 
+
+
 class sum_global_projections:
     def __init__(self):
         self._filepath = "./data/41558_2023_1605_MOESM2_ESM.xlsx"
-        self._data = self.prepare_data()
+        self._data = self.prepare_data(self)
 
     def prepare_data(self):
         data = pb.read_excel(self._filepath, sheet_name="Global Projections")
@@ -33,3 +35,6 @@ class sum_global_projections:
         :rtype: pandas.core.series.Series
         """
         return self._data['N2O']
+
+    def xscale(self):
+        return self._data["Year"]
