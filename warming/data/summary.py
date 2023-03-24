@@ -26,3 +26,43 @@ class Summary:
         :rtype: pandas.core.series.Series
         """
         return self._data["CO2C"]
+
+    def ch4(self):
+        """Returns the data of `CH4C` values per capity per country.
+
+        :return: The `CH4C` data per capity per country.
+        :rtype: pandas.core.series.Series
+        """
+        return self._data['CH4C']
+
+    def n2o(self):
+        """Returns the data of `N2OC` values per capity per country.
+
+        :return: The `N2OC` data per capity per country.
+        :rtype: pandas.core.series.Series
+        """
+        return self._data['N2OC']
+
+    def co2_year(self):
+        """Returns the data of `CO2` values per capity per country.
+
+        :return: The `CO2` data per capity per country.
+        :rtype: pandas.core.series.Series
+        """
+        return self._data["CO2Y"]
+
+    def ch4_year(self):
+        """Returns the data of `CH4C` values per capity per country.
+
+        :return: The `CH4C` data per capity per country.
+        :rtype: pandas.core.series.Series
+        """
+        return self._data['CH4Y']
+
+    def n2o_year(self):
+        """Returns the data of `N2OC` values per capity per country.
+
+        :return: The `N2OC` data per capity per country.
+        :rtype: pandas.core.series.Series
+        """
+        return self._data['N2OY']
