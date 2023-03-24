@@ -33,3 +33,6 @@ class sum_global_projections:
         :rtype: pandas.core.series.Series
         """
         return self._data['N2O']
+
+    def xscale(self):
+        return self._data["Year"]
